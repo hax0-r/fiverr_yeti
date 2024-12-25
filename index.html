@@ -11,6 +11,8 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -23,12 +25,12 @@
         <i id="openNav" class="fa-solid fa-bars text-white md:hidden text-2xl cursor-pointer"></i>
     </div>
     <ul class="md:flex text-white font-medium bg-[#110734] w-full p-4 items-center justify-center gap-7 hidden">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">Disclaimer</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About Us</a></li>
+        <li><a href="./Games.html">Games</a></li>
+        <li><a href="./Disclaimer.html">Disclaimer</a></li>
+        <li><a href="./Privacy.html">Privacy Policy</a></li>
+        <li><a href="./Contact.html">Contact Us</a></li>
     </ul>
     <!-- ======responsive Nav========= -->
     <div style="width: 0%;" id="resNav"
@@ -37,69 +39,283 @@
             <i id="closeNav" class="fa-solid fa-x text-white px-6 pt-8 cursor-pointer"></i>
         </div>
         <ul class="flex flex-col text-zinc-100 font-medium w-full p-4 gap-2">
-            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Home</a></li>
-            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">About Us</a></li>
-            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Games</a></li>
-            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Disclaimer</a></li>
-            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Privacy Policy</a></li>
-            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Contact Us</a></li>
+            <li><a href="./index.html" class="border-b text-nowrap border-zinc-700 block py-3">Home</a></li>
+            <li><a href="./About.html" class="border-b text-nowrap border-zinc-700 block py-3">About Us</a></li>
+            <li><a href="./Games.html" class="border-b text-nowrap border-zinc-700 block py-3">Games</a></li>
+            <li><a href="./Disclaimer.html" class="border-b text-nowrap border-zinc-700 block py-3">Disclaimer</a></li>
+            <li><a href="./Privacy.html" class="border-b text-nowrap border-zinc-700 block py-3">Privacy Policy</a></li>
+            <li><a href="./Contact.html" class="border-b text-nowrap border-zinc-700 block py-3">Contact Us</a></li>
         </ul>
     </div>
 
-    <p class="max-w-[940px] text-center px-4 w-full md:text-[16px] text-sm mx-auto mt-14 md:text-lg text-zinc-800">Welcome to <span
-            class="font-semibold text-black">Download Page for YOLO 777 – Official APK</span> File for Android Devices.
-        You can Download the Latest Version for <a href="" class="text-blue-600 hover:underline">Yolo 777</a> APK
-        version v0.9.38.1 directly from the given download button below</p>
+    <!-- ================================ -->
+    <!-- ================================ -->
 
-    <img src="./Docs/Assets/yolo2.png" class="h-36 mx-auto md:mt-10 mt-6" alt="">
 
-    <div class="overflow-x-auto max-w-4xl mx-auto w-full rounded-lg overflow-hidden md:mt-8 mt-6 px-4">
-        <table class="w-full border-collapse rounded-lg overflow-hidden ">
-            <tbody>
-                <tr class="bg-gray-100 border-b">
-                    <td class="p-4 font-semibold text-gray-800">App Name</td>
-                    <td class="p-4 text-gray-900">YOLO 777</td>
-                </tr>
-                <tr class="border-b">
-                    <td class="p-4 font-semibold text-gray-800">Developer</td>
-                    <td class="p-4 text-gray-900">YOLO777(GAME)</td>
-                </tr>
-                <tr class="bg-gray-100 border-b">
-                    <td class="p-4 font-semibold text-gray-800">Version</td>
-                    <td class="p-4 text-gray-900">v0.9.38.1</td>
-                </tr>
-                <tr class="border-b">
-                    <td class="p-4 font-semibold text-gray-800">Size</td>
-                    <td class="p-4 text-gray-900">51.2 MB</td>
-                </tr>
-                <tr class="bg-gray-100 border-b">
-                    <td class="p-4 font-semibold text-gray-800">Category</td>
-                    <td class="p-4 text-gray-900">Apps/Games</td>
-                </tr>
-                <tr class="border-b">
-                    <td class="p-4 font-semibold text-gray-800">License</td>
-                    <td class="p-4 text-gray-900">Freeware</td>
-                </tr>
-                <tr class="bg-gray-100">
-                    <td class="p-4 font-semibold text-gray-800">Requirement</td>
-                    <td class="p-4 text-gray-900">Android 9.0+</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="grid md:grid-cols-2 items-center gap-2 mt-5 mb-16">
-            <a href="">
-                <button
-                    class="px-5 py-3.5 w-full md:font-medium rounded-lg text-white transition-all duration-500 bg-gradient-to-r from-[#f8b103] to-[#f68704]">Are
-                    you looking to register as an agent?</button>
-            </a>
-            <a href="">
-                <button
-                    class="px-5 flex items-center justify-center gap-3 py-[10.2px] w-full md:font-medium rounded-lg text-white transition-all duration-500 bg-gradient-to-r from-[#1090ff] to-[#2760ff]"> <i class="fa-brands fa-telegram text-2xl" ></i> Join our Telegram</button>
-            </a>
+
+    <div class="max-w-5xl w-full mx-auto p-4  md:py-16 py-8 ">
+        <div class="flex items-center justify-center md:flex-row flex-col md:gap-20 gap-8">
+            <img src="./Docs/Assets/yolo2.png" class="h-40" alt="">
+            <div class="w-full">
+                <h1 class="text-[#1c0d5a] font-semibold md:text-start text-center text-xl">YOLO 777 Download (Latest)
+                    v0.9.1 for Android & IOS
+                    2024
+                </h1>
+                <div class="grid grid-cols-2 items-center gap-5 mt-5 w-full">
+                    <div class="flex items-center md:justify-start justify-center gap-2">
+                        <i class="fa-solid fa-circle-exclamation text-[#f1a10e]"></i>
+                        <p class="font-semibold text-zinc-700">Version : <span
+                                class="font-normal text-sm opacity-75">0.9.1 &nbsp; &nbsp;&nbsp;</span></p>
+                    </div>
+                    <div class="flex items-center md:justify-start justify-center gap-2">
+                        <i class="fa-solid fa-download text-[#f1a10e]"></i>
+                        <p class="font-semibold text-zinc-700">Size : <span class="font-normal text-sm opacity-75">48.37
+                                MB &nbsp; &nbsp; &nbsp;</span></p>
+                    </div>
+                    <div class="flex items-center md:justify-start justify-center gap-2">
+                        <i class="fa-solid fa-user text-[#f1a10e]"></i>
+                        <p class="font-semibold text-zinc-700">Developer : <span
+                                class="font-normal text-sm opacity-75">YETI</span></p>
+                    </div>
+                    <div class="flex items-center md:justify-start justify-center gap-2">
+                        <i class="fa-solid fa-mobile-screen-button text-[#f1a10e]"></i>
+                        <p class="font-semibold text-zinc-700">OS : <span class="font-normal text-sm opacity-75">Android
+                                –
+                                iOS
+                            </span></p>
+                    </div>
+                </div>
+                <p class="text-zinc-800 text-sm my-7 md:text-start text-center">Download <span
+                        class="font-semibold text-black">YETI 777</span>
+                    Latest
+                    Version v0.9.1 for Android, IOS and login to explore the unlimited slots, table, and fish games. It
+                    is a
+                    free-to-download app that also allows users to earn prizes. </p>
+                <a href="./download.html">
+                    <button
+                        class="px-5 flex items-center justify-center gap-3 py-3.5 w-full md:font-medium rounded-lg text-white transition-all duration-500 text-lg bg-gradient-to-r from-[#f8b103] to-[#f68704]">
+                        Download Now <i class="fa-solid fa-download text-xl"></i></button>
+                </a>
+            </div>
         </div>
+        <p class="md:mt-16 mt-8">The recent development of the gaming industry has been driven by new mobile gaming
+            systems that have turned
+            smartphones and tablets into easily portable, high-performance gaming devices. These systems come with
+            breath-taking graphics, wonderful gameplays and original storylines, thus providing an involving virtual
+            experience similar to that found on traditional consoles.
+            <br><br>
+            Introducing YOLO 777 a new ground breaking online gaming system that allow users to play their favourite 777
+            games on Web Browsers, Android & iOS devices. There are 100+ different games available to play on Yolo777
+            platform from various categories such as video games, cards, fishing, slots, keno games and many more.
+        </p>
+
+        <div class="flex justify-center items-start my-2">
+            <div class="w-full  my-1">
+                <ul class="flex flex-col">
+                    <li class="bg-white my-2 myShadow rounded-lg p-2" x-data="accordion(1)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                            <span>Table of Contents
+                            </span>
+                            <svg :class="handleRotate()"
+                                class="fill-current text-zinc-700 h-6 w-6 transform transition-transform duration-500"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+                                </path>
+                            </svg>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                            class=" overflow-hidden max-h-0 duration-500 transition-all">
+                            <ul class="p-3 text-gray-900 pl-10 space-y-2 list-disc ">
+                                <li class=" cursor-pointer hover:underline"> YOLO 777 Download (Latest) v0.9.1 for
+                                    Android & IOS 2024</li>
+                                <li class=" cursor-pointer hover:underline ml-7"> What is YOLO 777?</li>
+                                <li class=" cursor-pointer hover:underline ml-7"> Key Features of Yolo 777</li>
+                                <li class=" cursor-pointer hover:underline ml-14"> Free to Play</li>
+                                <li class=" cursor-pointer hover:underline ml-14"> Great Collection of Games</li>
+                                <li class=" cursor-pointer hover:underline ml-14"> Ultra-Fast Game Play</li>
+                                <li class=" cursor-pointer hover:underline ml-14"> Regular Updates</li>
+                                <li class=" cursor-pointer hover:underline ml-14"> Multi-Language Support</li>
+                                <li class=" cursor-pointer hover:underline ml-14"> Performance Optimization</li>
+                                <li class=" cursor-pointer hover:underline ml-14"> Payment Methods</li>
+                                <li class=" cursor-pointer hover:underline ml-7"> Game Play & Screen Shots</li>
+                                <li class=" cursor-pointer hover:underline ml-7"> Play Yolo 777 on Smart Phone?</li>
+                                <li class=" cursor-pointer hover:underline ml-7"> Download YOLO 777 App for Android &
+                                    iOS</li>
+                                <li class=" cursor-pointer hover:underline ml-7"> Conclusion</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="rounded-lg mb-5 p-3 md:mt-10 mt-5 font-semibold text-xl bg-[#f1a10e] text-white text-center">What is
+            YOLO
+            777?</h2>
+        <p>Yolo 777 is an online gaming platform that allow users to play & competite some of the most popular games on
+            the web. It is a free-to-download app that also allows users to earn prizes.
+            <br><br>
+            Players can invest real money to competite against one another the winners keeps the winning prizes and
+            cash. There are many online gaming platforms available on the web where users can play games to earn money
+            but finding the right one with latest games is always a problem to new and seasoned players.
+            <br><br>
+            With <span class="font-semibold text-[#1c0d5a]">YOLO (Abbreviated as Your Opportunity Limitless Out
+                Comes)</span> you don’t need to worry about these issues
+            since the app offers 128-bit encryption that ensure users safety and security. The App also comes with
+            Ultra-Fast technology to make it run smoothly on all type of mobile devices.
+
+        </p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#f1a10e] text-white text-center">Key Features of
+            Yolo 777
+        </h2>
+        <p><span class="text-[#f1a10e] font-semibold">Yolo777</span> is a modern social casino app that offers various
+            games on single platform. There are many games
+            available from various categories such as 777 Slots, Cards, KENO Games & Fishing Games. The Gaming system
+            comes with great features in section we have a briefly explained each feature of the game to help you
+            achieve great success in the game-play.
+        </p>
+
+        <img src="./Docs/Assets/img1.jpg" class="md:my-10 my-5 rounded-lg myShadow" alt="">
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#a80ca3] text-white text-center">Free to Play
+
+        </h2>
+        <p>The question of whether their favorite game can be played for free is one that worries every gamer.
+            Fortunately, you may play your preferred card game, slot machine, or any other game on this app for free.
+        </p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#a80ca3] text-white text-center">Great Collection
+            of Games
+
+        </h2>
+        <p>Yolo comes with great collection of games from some of the most popular game developers. here is detailed
+            list of games;
+        </p>
+
+        <ul class="p-3 text-gray-900 pl-5 space-y-1 my-5 list-disc ">
+            <li> <span class="font-semibold">Total Games : </span> 160+</li>
+            <li> <span class="font-semibold">777 Slots : </span> 50+</li>
+            <li> <span class="font-semibold">Fish Style : </span> 50+</li>
+            <li> <span class="font-semibold">Roulette : </span> 20+</li>
+            <li> <span class="font-semibold">KENO : </span> 20+</li>
+            <li> <span class="font-semibold">Licensed Movie-Themed Games : </span> Officially licensed and highly
+                engaging.</li>
+            <li> <span class="font-semibold">Top-Tier Gaming Manufacturers : </span> Featuring PlayGT, Play CQ9, Play
+                GD, EGT, iSoftBet, Aristocrat, NetEnt,
+                Novomatic, and more.</li>
+        </ul>
+        <p><span class="text-black font-semibold">YOLO777</span> also has events where you can earn coins, like Spin
+            Wheel, Welcome Bonuses, a Progress Programme, Affiliate Bonuses that also allows you to invite your freinds
+            to play with them.</p>
+
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#a80ca3] text-white text-center">Ultra-Fast Game
+            Play
+        </h2>
+        <p>The Game comes with an exclusive technology which makes this game-play very fast. You wont be facing any
+            down-times or lagging while playing this game even if you are running it on older version of smartphone you
+            will still get a faster game-play comparing to most of the games available today.
+        </p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#a80ca3] text-white text-center">Regular Updates
+        </h2>
+        <p>The app’s update area provides access to the most recent details regarding the game and updates.
+            Announcements, forthcoming events, and new releases are among the information available.</p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#a80ca3] text-white text-center">Multi-Language
+            Support
+        </h2>
+        <p>This app supports diverse languages to support the needs of players across the globe. You can change language
+            preferences anytime.</p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#a80ca3] text-white text-center">Performance
+            Optimization </h2>
+        <p>This app has performance optimizing feature in the background so, you do not need to be worried about it.
+        </p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#a80ca3] text-white text-center">Payment Methods
+        </h2>
+        <p>Multiple payment methods including Bank Transfer, Master Cards, and Debit Cards. Users can choose the payment
+            method based on their preferences. </p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#f1a10e] text-white text-center">Game Play &
+            Screen Shots </h2>
+
+        <div class="">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/slide1.png" class="rounded-lg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/slide2.png" class="rounded-lg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/slide3.png" class="rounded-lg" alt="">
+                    </div>
+                </div>
+                <div class="pb-7"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+
+        <h2 class="rounded-lg mb-5 p-3 md:mt-10 mt-5 font-semibold text-xl bg-[#f1a10e] text-white text-center">Play
+            Yolo 777 on
+            Smart Phone?</h2>
+        <p>Here is a complete guide to how to play YOLO 777, which will help you take the initiative in your journey in
+            the gaming world.
+
+
+        </p>
+
+        <ul class="p-3 text-gray-900 pl-5 space-y-1 my-5 list-disc ">
+            <li> To play at YOLO 777 Casino, you must first sign up.</li>
+            <li> Once you’ve signed up, you can use any payment method to add money to your account.</li>
+            <li> There are over 6,000 games to choose from, so take your time and find one that you like.</li>
+            <li> When you’re ready to play, click on the game and follow the on-screen steps.</li>
+        </ul>
+        <p>You choose slot machine and then spin the reels. When you play table games, you need to place your bid and
+            follow the rules. You can email or live chat with the support team if you need help. You can play games from
+            anywhere with a secure and stable internet connection.</p>
+
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#f1a10e] text-white text-center">Download YOLO
+            777 App for Android & iOS </h2>
+        <p>Yolo777 is a globally popular online gaming application. Despite its popularity, it is not available on
+            official app stores like Google Play Store or the Apple App Store. Users typically download the app from
+            various third-party websites, which increases the risk of downloading incorrect or malicious files. To
+            ensure safety and authenticity, users are encouraged to use the provided link on the official page to
+            download the original APK file. </p>
+        <img src="./Docs/Assets/img2.jpg" class="rounded-lg mx-auto max-w-lg w-full md:my-10 my-5" alt="">
+        <p>
+            To start using Yolo777, players must first create an account. The registration process requires basic
+            information such as an email address and a username. Once the account is created, players can deposit funds
+            using various methods, including credit cards, e-wallets, and bank transfers. After funding their accounts,
+            players can begin enjoying the wide range of games offered by Yolo777.
+            <br><br>
+            While online gaming with Yolo777 offers convenience and entertainment, it also poses risks. It can be more
+            addictive than traditional physical casinos due to factors such as easy access to a vast number of virtual
+            games, the ability to play in isolation, no time constraints, and the allure of winning more prizes. These
+            factors can lead to problematic gaming behavior. Users are advised to play responsibly, stay aware of the
+            risks, and avoid addiction.
+        </p>
+        <h2 class="rounded-lg mb-5 p-3 mt-10 font-semibold text-xl bg-[#f1a10e] text-white text-center">Conclusion
+        </h2>
+        <p>YOLO 777 provides a remote gaming option, so there is no need to stay at home or the office you can easily
+            earn from this when you have a secure and stable internet connection.
+            <br><br>
+            The Game is also available for smartphones and desktops which is another edge for players. Because of the
+            richness of the gaming option, it is the most reliable, best source of earning a lot. So, go ahead, download
+            it and enjoy your time by investing it in the right place and earning as much as you can.
+
+        </p>
+
     </div>
 
-    <footer class="bg-black p-5">
+
+
+
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+    <footer class="bg-black mt-6 p-5">
         <div class="flex items-center justify-center">
             <a href="./index.html">
                 <img src="./Docs/Assets/footer.png" class="h-40 mx-auto" alt="">
@@ -110,7 +326,46 @@
 
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./Docs/Javascripts/global.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.store('accordion', {
+                tab: 0
+            });
+
+            Alpine.data('accordion', (idx) => ({
+                init() {
+                    this.idx = idx;
+                },
+                idx: -1,
+                handleClick() {
+                    this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+                },
+                handleRotate() {
+                    return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+                },
+                handleToggle() {
+                    return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+                }
+            }));
+        })
+    </script>
 </body>
 
 </html>
