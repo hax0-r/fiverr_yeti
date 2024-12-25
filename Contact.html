@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YETI</title>
+    <link rel="shortcut icon" href="/Docs/Assets/yolo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex items-center md:justify-center justify-between p-5 bg-black">
+        <a href="./index.html">
+            <img src="./Docs/Assets/logo.png" class="md:h-12 h-8" alt="">
+        </a>
+        <i id="openNav" class="fa-solid fa-bars text-white md:hidden text-2xl cursor-pointer"></i>
+    </div>
+    <ul class="md:flex text-white font-medium bg-[#110734] w-full p-4 items-center justify-center gap-7 hidden">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About Us</a></li>
+        <li><a href="./Games.html">Games</a></li>
+        <li><a href="./Disclaimer.html">Disclaimer</a></li>
+        <li><a href="./Privacy.html">Privacy Policy</a></li>
+        <li><a href="./Contact.html">Contact Us</a></li>
+    </ul>
+    <!-- ======responsive Nav========= -->
+    <div style="width: 0%;" id="resNav"
+        class="transition-all duration-500 fixed top-0 left-0 bg-black h-screen overflow-hidden">
+        <div class="  items-end justify-end flex">
+            <i id="closeNav" class="fa-solid fa-x text-white px-6 pt-8 cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col text-zinc-100 font-medium w-full p-4 gap-2">
+            <li><a href="./index.html" class="border-b text-nowrap border-zinc-700 block py-3">Home</a></li>
+            <li><a href="./About.html" class="border-b text-nowrap border-zinc-700 block py-3">About Us</a></li>
+            <li><a href="./Games.html" class="border-b text-nowrap border-zinc-700 block py-3">Games</a></li>
+            <li><a href="./Disclaimer.html" class="border-b text-nowrap border-zinc-700 block py-3">Disclaimer</a></li>
+            <li><a href="./Privacy.html" class="border-b text-nowrap border-zinc-700 block py-3">Privacy Policy</a></li>
+            <li><a href="./Contact.html" class="border-b text-nowrap border-zinc-700 block py-3">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+
+
+    <div class="w-full md:py-16 py-8 p-4 bg-[#eff7fb]">
+        <div class="max-w-7xl w-full mx-auto">
+            <p class="text-zinc-700">At <a href="./index.html" class="hover:underline text-blue-500">YOLO 777</a>, we
+                are committed to ensuring you have the best gaming experience
+                possible. If you encounter any issues or have any questions while playing, our dedicated support team is
+                here to help you 24/7.
+                <br><br>
+                Feel free to reach out to us at any time. Your satisfaction is our top priority, and we are always ready
+                to assist you.
+            </p>
+
+            <form class="md:pt-12 pt-8" action="">
+                <label for="name" class="text-zinc-700">Your Name</label>
+                <input type="text" name="name" class="w-full input focus:border-zinc-400 bg-white p-3.5 rounded-lg border  md:mt-2 mt-1" placeholder="Enter Your Name" required id="name">
+                <label for="email" class="text-zinc-700 block md:mt-7 mt-5">Your E-Mail</label>
+                <input type="email" name="email" class="w-full input focus:border-zinc-400 bg-white p-3.5 rounded-lg border  md:mt-2 mt-1" placeholder="Enter Your email" required id="name">
+                <label for="subject" class="text-zinc-700 block md:mt-7 mt-5">Subject</label>
+                <input type="text" name="subject" class="w-full input focus:border-zinc-400 bg-white p-3.5 rounded-lg border  md:mt-2 mt-1" placeholder="Enter Your subject" required id="name">
+                <label for="message" class="text-zinc-700 block md:mt-7 mt-5">Your message <span class="text-xs text-zinc-400">(optional)</span></label>
+                <textarea type="text" name="subject" class="w-full input focus:border-zinc-400 bg-white p-3.5 rounded-lg border  md:mt-2 mt-1" placeholder="Write Your Message" id="name" rows="9"></textarea>
+                
+                <button class="w-full rounded-lg mt-3 p-3 bg-[#295cff] transition-all duration-500 hover:bg-blue-500 text-white font-medium">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+    <footer class="bg-black p-5">
+        <div class="flex items-center justify-center">
+            <a href="./index.html">
+                <img src="./Docs/Assets/footer.png" class="h-40 mx-auto" alt="">
+            </a>
+        </div>
+        <p class="text-white mt-7 text-center font-medium">© 2024 Yolo 777 - All Rights Reserved 2024 Yolo777.Net</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>

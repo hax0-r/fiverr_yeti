@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YETI</title>
+    <link rel="shortcut icon" href="/Docs/Assets/yolo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex items-center md:justify-center justify-between p-5 bg-black">
+        <a href="./index.html">
+            <img src="./Docs/Assets/logo.png" class="md:h-12 h-8" alt="">
+        </a>
+        <i id="openNav" class="fa-solid fa-bars text-white md:hidden text-2xl cursor-pointer"></i>
+    </div>
+    <ul class="md:flex text-white font-medium bg-[#110734] w-full p-4 items-center justify-center gap-7 hidden">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About Us</a></li>
+        <li><a href="./Games.html">Games</a></li>
+        <li><a href="./Disclaimer.html">Disclaimer</a></li>
+        <li><a href="./Privacy.html">Privacy Policy</a></li>
+        <li><a href="./Contact.html">Contact Us</a></li>
+    </ul>
+    <!-- ======responsive Nav========= -->
+    <div style="width: 0%;" id="resNav"
+        class="transition-all duration-500 fixed top-0 left-0 bg-black h-screen overflow-hidden">
+        <div class="  items-end justify-end flex">
+            <i id="closeNav" class="fa-solid fa-x text-white px-6 pt-8 cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col text-zinc-100 font-medium w-full p-4 gap-2">
+            <li><a href="./index.html" class="border-b text-nowrap border-zinc-700 block py-3">Home</a></li>
+            <li><a href="./About.html" class="border-b text-nowrap border-zinc-700 block py-3">About Us</a></li>
+            <li><a href="./Games.html" class="border-b text-nowrap border-zinc-700 block py-3">Games</a></li>
+            <li><a href="./Disclaimer.html" class="border-b text-nowrap border-zinc-700 block py-3">Disclaimer</a></li>
+            <li><a href="./Privacy.html" class="border-b text-nowrap border-zinc-700 block py-3">Privacy Policy</a></li>
+            <li><a href="./Contact.html" class="border-b text-nowrap border-zinc-700 block py-3">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+
+
+    <div class="w-full md:py-16 py-8 p-4 bg-[#eff7fb]">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-center font-semibold md:text-4xl text-2xl pb-5 text-[#1c0d5a]">Welcome to YOLO777 – Official
+            </h2>
+            <p class="text-center text-zinc-700">Hello, app lovers and developers alike! Welcome to YOLO777, where the
+                world of
+                Android apps and games comes to life. We’re excited to introduce ourselves and provide you a sneak peek
+                into what makes our APK downloads website the best one-stop shop for all your Android needs. </p>
+
+            <h2 class="md:text-center md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-12 text-zinc-800">Our
+                Story: Passion
+                Meets
+                Innovation</h2>
+            <p class="text-zinc-700">Imagine a group of tech enthusiasts with an insatiable desire for the latest apps
+                and games coming
+                together to create something spectacular. That’s us! Driven by our love for flawless user experiences
+                and a commitment to promoting secure software, we embarked on a quest to design a platform that caters
+                to both consumers and developers.</p>
+            <h2 class="md:text-center md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">A
+                World of Apps at
+                Your Fingertips </h2>
+            <p class="text-zinc-700">Picture an endless app aisle – that’s what we’ve designed for you at YOLO777! Our
+                APK downloads website is your gateway to a treasure trove of Android apps and games. From productivity
+                tools that keep you on top of your game to adrenaline-pumping adventures that make your heart race,
+                we’ve got it all. Our carefully curated collection ensures each app or game is thoroughly tested for
+                quality and security before its grand debut on our platform.</p>
+            <h2 class="md:text-center md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">By
+                Developers, For Developers</h2>
+            <p class="text-zinc-700">Calling all the brilliant minds who breathe life into apps and games – YOLO777 is
+                your canvas! We’re passionate about providing developers with a stage to showcase their creations. If
+                you’re a developer with a vision, look no further. We offer a space for you to publish, promote, and
+                share your apps with a vibrant community of users eager for the next big thing.</p>
+            <h2 class="md:text-center md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">Safety
+                First, Always
+
+            </h2>
+            <p class="text-zinc-700">We understand that safety is paramount when it comes to downloading software. You
+                shouldn’t have to worry about hidden glitches or security breaches. That’s why we make it our top
+                priority to ensure every app and game on our platform is safe and secure. Our team of experts rigorously
+                tests each software before giving it the green light. When you download from us, you’re not just getting
+                an app – you’re getting peace of mind.
+
+            </p>
+            <h2 class="md:text-center md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">Join
+                Our Community
+
+            </h2>
+            <p class="text-zinc-700">At our core, we’re more than just a website – we’re a community. A place where
+                users and developers come together to celebrate the world of Android apps and games. Join our
+                conversations, share your thoughts, and be a part of the excitement. Whether you’re an avid gamer, a
+                productivity guru, or a curious developer, there’s a place for you in our ever-growing family.
+
+            </p>
+            <h2 class="md:text-center md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">Get in
+                Touch
+
+            </h2>
+            <p class="text-zinc-700">Have questions, suggestions, or just want to say hi? We’d love to hear from you!
+                Feel free to drop us a line anytime through our contact page. Your feedback keeps us evolving and
+                improving, ensuring that we continue to offer you the best experience possible.
+                <br><br>
+                So there you have it – our story, our mission, and our commitment to bringing you the finest Android
+                apps and games in a secure and dynamic environment. Thank you for being a part of our journey. Here’s to
+                countless hours of entertainment, productivity, and innovation with YOLO777!
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+    <footer class="bg-black p-5">
+        <div class="flex items-center justify-center">
+            <a href="./index.html">
+                <img src="./Docs/Assets/footer.png" class="h-40 mx-auto" alt="">
+            </a>
+        </div>
+        <p class="text-white mt-7 text-center font-medium">© 2024 Yolo 777 - All Rights Reserved 2024 Yolo777.Net</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YETI</title>
+    <link rel="shortcut icon" href="/Docs/Assets/yolo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex items-center md:justify-center justify-between p-5 bg-black">
+        <a href="./index.html">
+            <img src="./Docs/Assets/logo.png" class="md:h-12 h-8" alt="">
+        </a>
+        <i id="openNav" class="fa-solid fa-bars text-white md:hidden text-2xl cursor-pointer"></i>
+    </div>
+    <ul class="md:flex text-white font-medium bg-[#110734] w-full p-4 items-center justify-center gap-7 hidden">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About Us</a></li>
+        <li><a href="./Games.html">Games</a></li>
+        <li><a href="./Disclaimer.html">Disclaimer</a></li>
+        <li><a href="./Privacy.html">Privacy Policy</a></li>
+        <li><a href="./Contact.html">Contact Us</a></li>
+    </ul>
+    <!-- ======responsive Nav========= -->
+    <div style="width: 0%;" id="resNav"
+        class="transition-all duration-500 fixed top-0 left-0 bg-black h-screen overflow-hidden">
+        <div class="  items-end justify-end flex">
+            <i id="closeNav" class="fa-solid fa-x text-white px-6 pt-8 cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col text-zinc-100 font-medium w-full p-4 gap-2">
+            <li><a href="./index.html" class="border-b text-nowrap border-zinc-700 block py-3">Home</a></li>
+            <li><a href="./About.html" class="border-b text-nowrap border-zinc-700 block py-3">About Us</a></li>
+            <li><a href="./Games.html" class="border-b text-nowrap border-zinc-700 block py-3">Games</a></li>
+            <li><a href="./Disclaimer.html" class="border-b text-nowrap border-zinc-700 block py-3">Disclaimer</a></li>
+            <li><a href="./Privacy.html" class="border-b text-nowrap border-zinc-700 block py-3">Privacy Policy</a></li>
+            <li><a href="./Contact.html" class="border-b text-nowrap border-zinc-700 block py-3">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+
+
+    <div class="w-full md:py-16 py-8 p-4 bg-[#eff7fb]">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <p class="text-center text-zinc-700">All the information on this website – www.yolo777.net – is published in
+                good faith and for general information purposes only. YOLO 777 does not make any warranties about the
+                completeness, reliability, and accuracy of this information. Any action you take upon the information
+                you find on this website (YOLO 777) is strictly at your own risk. YOLO 777 will not be liable for any
+                losses and/or damages in connection with the use of our website.
+                <br><br>
+                From our website, you can visit other websites by following hyperlinks to such external sites. While we
+                strive to provide only quality links to useful and ethical websites, we have no control over the content
+                and nature of these sites. These links to other websites do not imply a recommendation for all the
+                content found on these sites. Site owners and content may change without notice and may occur before we
+                have the opportunity to remove a link which may have gone ‘bad’.
+                <br><br>
+                Please be also aware that when you leave our website, other sites may have different privacy policies
+                and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as
+                well as their “Terms of Service” before engaging in any business or uploading any information.
+
+            </p>
+
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-12 text-zinc-800">Our
+                Consent</h2>
+            <p class="text-zinc-700">By using our website, you hereby consent to our disclaimer and agree to its terms.
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">A
+                Update
+
+            </h2>
+            <p class="text-zinc-700">Should we update, amend, or make any changes to this document, those changes will
+                be prominently posted here.
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+    <footer class="bg-black p-5">
+        <div class="flex items-center justify-center">
+            <a href="./index.html">
+                <img src="./Docs/Assets/footer.png" class="h-40 mx-auto" alt="">
+            </a>
+        </div>
+        <p class="text-white mt-7 text-center font-medium">© 2024 Yolo 777 - All Rights Reserved 2024 Yolo777.Net</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>

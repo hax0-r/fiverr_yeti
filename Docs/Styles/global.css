@@ -102,3 +102,7 @@ img, button, iframe, a {
 .swiper-pagination-bullet-active{
   background: #f1a10e !important;
 }
+
+.input:user-invalid{
+  border: 1px solid red;
+}

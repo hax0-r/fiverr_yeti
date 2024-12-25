@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YETI</title>
+    <link rel="shortcut icon" href="/Docs/Assets/yolo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex items-center md:justify-center justify-between p-5 bg-black">
+        <a href="./index.html">
+            <img src="./Docs/Assets/logo.png" class="md:h-12 h-8" alt="">
+        </a>
+        <i id="openNav" class="fa-solid fa-bars text-white md:hidden text-2xl cursor-pointer"></i>
+    </div>
+    <ul class="md:flex text-white font-medium bg-[#110734] w-full p-4 items-center justify-center gap-7 hidden">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About Us</a></li>
+        <li><a href="./Games.html">Games</a></li>
+        <li><a href="./Disclaimer.html">Disclaimer</a></li>
+        <li><a href="./Privacy.html">Privacy Policy</a></li>
+        <li><a href="./Contact.html">Contact Us</a></li>
+    </ul>
+    <!-- ======responsive Nav========= -->
+    <div style="width: 0%;" id="resNav"
+        class="transition-all duration-500 fixed top-0 left-0 bg-black h-screen overflow-hidden">
+        <div class="  items-end justify-end flex">
+            <i id="closeNav" class="fa-solid fa-x text-white px-6 pt-8 cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col text-zinc-100 font-medium w-full p-4 gap-2">
+            <li><a href="./index.html" class="border-b text-nowrap border-zinc-700 block py-3">Home</a></li>
+            <li><a href="./About.html" class="border-b text-nowrap border-zinc-700 block py-3">About Us</a></li>
+            <li><a href="./Games.html" class="border-b text-nowrap border-zinc-700 block py-3">Games</a></li>
+            <li><a href="./Disclaimer.html" class="border-b text-nowrap border-zinc-700 block py-3">Disclaimer</a></li>
+            <li><a href="./Privacy.html" class="border-b text-nowrap border-zinc-700 block py-3">Privacy Policy</a></li>
+            <li><a href="./Contact.html" class="border-b text-nowrap border-zinc-700 block py-3">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+
+
+    <div class="w-full md:py-16 py-8 p-4 bg-[#eff7fb]">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg text-zinc-800">Who
+                We Are </h2>
+            <p class="text-zinc-700">Welcome to YOLO 777. Our website address is www.yolo777.net. We are committed to
+                protecting your privacy and ensuring the security of your personal information. In this Privacy Policy,
+                we outline the types of information we collect and how we use it. If you have any questions or concerns,
+                please feel free to contact us using the information provided below. </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">A
+                What Personal Data We Collect and Why We Collect It </h2>
+            <p class="text-zinc-700">We collect various types of personal data from our users and site visitors. This
+                may include: </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Personal Information
+
+            </h2>
+            <p class="text-zinc-700">When you interact with our site, we may collect personal information such as your
+                name, email address, and contact details. We collect this information to provide you with relevant
+                content and services, to communicate with you, and to improve your experience on our site.
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Transactional Data
+
+
+            </h2>
+            <p class="text-zinc-700">If you make a purchase on our site, we collect transactional data such as purchase
+                information for processing your orders.
+
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Technical Data
+
+
+
+            </h2>
+            <p class="text-zinc-700">Our site collects technical information, including your IP address, browser type,
+                pages visited, and cookies, to enhance your browsing experience and improve our website’s functionality.
+                <br><br>
+                We collect this data for various purposes, including improving our services, personalizing your
+                experience, and communicating with you. The legal basis for collecting this data may include your
+                consent or the necessity of fulfilling a contract with you.
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Comments
+            </h2>
+            <p class="text-zinc-700">When visitors leave comments on our site, we collect the data shown in the comments
+                form, as well as the visitor’s IP address and browser user agent string to help with spam detection.
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Media
+            </h2>
+            <p class="text-zinc-700">If you upload images to our website, you should avoid uploading images with
+                embedded location data (EXIF GPS) included. Visitors to the website can download and extract any
+                location data from images on the website.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Contact Forms
+
+
+            </h2>
+            <p class="text-zinc-700">If you use a contact form plugin, the information you submit through the form,
+                including your name, email address, and message, may be collected. We retain contact form submissions
+                for a certain period for customer service purposes, but we do not use the information submitted for
+                marketing purposes without your explicit consent.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Cookies
+            </h2>
+            <p class="text-zinc-700">Our website uses cookies to enhance your browsing experience. These cookies may be
+                set by our plugins, social media platforms, and analytics services. You can adjust your browser settings
+                to refuse cookies or to alert you when cookies are being sent. Please note that some parts of our site
+                may not function properly without cookies.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Analytics
+
+
+            </h2>
+            <p class="text-zinc-700">We may use analytics services to understand how users interact with our website.
+                These services may collect data such as your IP address and browsing behavior. We use this information
+                to improve our website’s performance and content. You can opt out of analytics tracking by adjusting
+                your browser settings or using browser add-ons.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Who We Share Your Data With
+
+
+            </h2>
+            <p class="text-zinc-700">We do not share your personal data with third parties unless necessary for
+                providing our services or as required by law. In cases where we share data with third parties, we ensure
+                that they adhere to privacy standards. We may use cloud-based services, payment processors, and
+                analytics providers. Please refer to their respective privacy policies for more information.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                How Long We Retain Your Data
+
+
+            </h2>
+            <p class="text-zinc-700">We retain your personal data for as long as necessary to fulfill the purposes for
+                which it was collected, unless a longer retention period is required or permitted by law.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Your Rights
+
+
+            </h2>
+            <p class="text-zinc-700">You have the right to access, update, or delete your personal data. You can also
+                request that we erase any personal data we hold about you. If you have any concerns about your privacy
+                rights, please contact us using the information below.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Where Your Data Is Sent
+
+
+            </h2>
+            <p class="text-zinc-700">Your data may be transferred and processed outside the European Union, but we take
+                measures to safeguard your data according to European data protection standards.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Contact Information
+
+
+            </h2>
+            <p class="text-zinc-700">For privacy concerns or questions, please contact us at info@yolo777.net.
+
+
+            </p>
+            <h2 class=" md:pb-5 pb-3 font-semibold md:text-2xl text-lg md:mt-16 mt-8 text-zinc-800">
+                Additional Information
+
+
+            </h2>
+            <p class="text-zinc-700">If you have further questions or require more detailed information about our data
+                collection and processing practices, please feel free to reach out to us using the contact information
+                provided.
+                <br><br>
+                Thank you for trusting YOLO 777 with your personal information. Your privacy is important to us, and we
+                are committed to maintaining the security of your data.
+
+
+            </p>
+         
+        </div>
+    </div>
+
+
+
+
+    <!-- ================================ -->
+    <!-- ================================ -->
+
+    <footer class="bg-black p-5">
+        <div class="flex items-center justify-center">
+            <a href="./index.html">
+                <img src="./Docs/Assets/footer.png" class="h-40 mx-auto" alt="">
+            </a>
+        </div>
+        <p class="text-white mt-7 text-center font-medium">© 2024 Yolo 777 - All Rights Reserved 2024 Yolo777.Net</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
