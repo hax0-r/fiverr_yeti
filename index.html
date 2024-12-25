@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YETI</title>
+    <link rel="shortcut icon" href="/Docs/Assets/yolo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex items-center md:justify-center justify-between p-5 bg-black">
+        <a href="./index.html">
+            <img src="./Docs/Assets/logo.png" class="md:h-12 h-8" alt="">
+        </a>
+        <i id="openNav" class="fa-solid fa-bars text-white md:hidden text-2xl cursor-pointer"></i>
+    </div>
+    <ul class="md:flex text-white font-medium bg-[#110734] w-full p-4 items-center justify-center gap-7 hidden">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <!-- ======responsive Nav========= -->
+    <div style="width: 0%;" id="resNav"
+        class="transition-all duration-500 fixed top-0 left-0 bg-black h-screen overflow-hidden">
+        <div class="  items-end justify-end flex">
+            <i id="closeNav" class="fa-solid fa-x text-white px-6 pt-8 cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col text-zinc-100 font-medium w-full p-4 gap-2">
+            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Home</a></li>
+            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">About Us</a></li>
+            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Games</a></li>
+            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Disclaimer</a></li>
+            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Privacy Policy</a></li>
+            <li><a href="#" class="border-b text-nowrap border-zinc-700 block py-3">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <p class="max-w-[940px] text-center px-4 w-full md:text-[16px] text-sm mx-auto mt-14 md:text-lg text-zinc-800">Welcome to <span
+            class="font-semibold text-black">Download Page for YOLO 777 – Official APK</span> File for Android Devices.
+        You can Download the Latest Version for <a href="" class="text-blue-600 hover:underline">Yolo 777</a> APK
+        version v0.9.38.1 directly from the given download button below</p>
+
+    <img src="./Docs/Assets/yolo2.png" class="h-36 mx-auto md:mt-10 mt-6" alt="">
+
+    <div class="overflow-x-auto max-w-4xl mx-auto w-full rounded-lg overflow-hidden md:mt-8 mt-6 px-4">
+        <table class="w-full border-collapse rounded-lg overflow-hidden ">
+            <tbody>
+                <tr class="bg-gray-100 border-b">
+                    <td class="p-4 font-semibold text-gray-800">App Name</td>
+                    <td class="p-4 text-gray-900">YOLO 777</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="p-4 font-semibold text-gray-800">Developer</td>
+                    <td class="p-4 text-gray-900">YOLO777(GAME)</td>
+                </tr>
+                <tr class="bg-gray-100 border-b">
+                    <td class="p-4 font-semibold text-gray-800">Version</td>
+                    <td class="p-4 text-gray-900">v0.9.38.1</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="p-4 font-semibold text-gray-800">Size</td>
+                    <td class="p-4 text-gray-900">51.2 MB</td>
+                </tr>
+                <tr class="bg-gray-100 border-b">
+                    <td class="p-4 font-semibold text-gray-800">Category</td>
+                    <td class="p-4 text-gray-900">Apps/Games</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="p-4 font-semibold text-gray-800">License</td>
+                    <td class="p-4 text-gray-900">Freeware</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="p-4 font-semibold text-gray-800">Requirement</td>
+                    <td class="p-4 text-gray-900">Android 9.0+</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="grid md:grid-cols-2 items-center gap-2 mt-5 mb-16">
+            <a href="">
+                <button
+                    class="px-5 py-3.5 w-full md:font-medium rounded-lg text-white transition-all duration-500 bg-gradient-to-r from-[#f8b103] to-[#f68704]">Are
+                    you looking to register as an agent?</button>
+            </a>
+            <a href="">
+                <button
+                    class="px-5 flex items-center justify-center gap-3 py-[10.2px] w-full md:font-medium rounded-lg text-white transition-all duration-500 bg-gradient-to-r from-[#1090ff] to-[#2760ff]"> <i class="fa-brands fa-telegram text-2xl" ></i> Join our Telegram</button>
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-black p-5">
+        <div class="flex items-center justify-center">
+            <a href="./index.html">
+                <img src="./Docs/Assets/footer.png" class="h-40 mx-auto" alt="">
+            </a>
+        </div>
+        <p class="text-white mt-7 text-center font-medium">© 2024 Yolo 777 - All Rights Reserved 2024 Yolo777.Net</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
